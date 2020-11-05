@@ -6,7 +6,7 @@ function cambioColor(){
     cu1.style.background="orange";
 }*/
 
-$("#cuadrado").click(
+/*$("#cuadrado").click(
     function(){
         $("#cuadrado").css({
             "background":"#fff",
@@ -15,4 +15,14 @@ $("#cuadrado").click(
             "border": "solid 2px black"
         });
     }
-)
+);*/
+$("#cuadrado").click(
+    function(){
+        $("#cuadrado").hide(1500),
+        $("#cuadrado").show(1500);
+        $("#cuadrado").css({
+            "background":"yellow",
+            
+        });
+    }
+);

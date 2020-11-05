@@ -78,7 +78,7 @@ function texto1(){
     //document.getElementById("texto1").innerHTML="Hola soy el perimero cambio de pagina";
     var dato=document.getElementById("texto1");
     dato.innerHTML="<div style='background=yellow' >Hola este es mi primer cambio de pagina </div> ";
-    dato.style.color="green";
+    dato.style.color="yellow";
 }
 
  
