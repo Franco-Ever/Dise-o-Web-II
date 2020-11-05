@@ -1,0 +1,60 @@
+*{
+    margi
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url(/Dise-o-Web-II/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+body:before
+{
+    content: "";
+    width: 100%;
+    min-height: 120vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #aae29f, #2d302f);
+    opacity: 0.9;
+    z-index:-1;
+}
+
+#titulo h1{
+    text-align: center;
+    background: rgb(139, 161, 117);
+    color: rgb(47, 53, 47);
+}
+#container{
+    text-align: center;
+}
+#container ul li {
+    list-style: none;
+}
+#container ul li{
+    width: 95%;
+    padding: 5px;
+}
+#container ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 2rem;
+    color: white;
+    font-size: 1.2em;
+    transition: all 0.5s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#container ul li a:hover{
+    background-color:#648676;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 10px;
+}
+footer{
+    padding: 10px;
+    color: rgb(47, 53, 47);
+
+}
