@@ -31,3 +31,33 @@ function cambio6(){
     cam6.style.transform="scale(0.9)";
     cam6.style.transition="all 0.9s";
 }
+document.write(Date());
+function animacion() {
+    var elem = document.getElementById("animate");   
+    var pos = 0;
+    var id = setInterval(frame, 5);
+    function frame() {
+      if (pos == 1150) {
+        clearInterval(id);
+      } else {
+        pos++; 
+        elem.style.right = pos + "px"; 
+        elem.style.left = pos + "px"; 
+      }
+    }
+}
+var w = window.innerWidth
+ document.documentElement.clientWidth
+ document.body.clientWidth;
+
+var h = window.innerHeight
+ document.documentElement.clientHeight
+ document.body.clientHeight;
+
+var x = document.getElementById("demo");
+x.innerHTML = "Ancho de la ventana interior del navegador " + w + ", height: " + h + ".";
+
+document.getElementById("demo2").innerHTML = "La altura de pantalla disponible es  " + screen.availHeight;
+
+document.getElementById("demo3").innerHTML = 
+"La URL completa de esta página es: <br>" + window.location.href;

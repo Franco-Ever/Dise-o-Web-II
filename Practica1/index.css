@@ -12,7 +12,7 @@ body:before
 {
     content: "";
     width: 100%;
-    min-height: 120vh;
+    min-height: 130vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -158,3 +158,12 @@ h2{
     color: #443C35;
     transition: all 0.2s;
 }
+#animate {
+    position: absolute;
+}
+#animate img{
+    width: 5rem;
+    height: 5rem;
+}
+
+
