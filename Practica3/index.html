@@ -2,25 +2,47 @@
   <html>
     <head>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <script src="/Dise-o-Web-II/Practica3/js/jquery-3.5.1.min.js"></script>
+      <script type="text/javascript" src="/Dise-o-Web-II/Practica3/js/materialize.min.js"></script>
+      <script src="/Dise-o-Web-II/Practica3/js/script.js"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" href="/Dise-o-Web-II/Practica3/css/estilos.css" type="text/css" media="screen,projection">
     </head>
 
     <body>
         <nav class="white" role="navigation">
             <div class="nav-wrapper container">
-                <a id="lodo-container" href="#" class="brand-logo">logo <i class="material-icons"></i></a>
+                <a id="lodo-container" href="#" class="brand-logo">logo <i class="material-icons">cloud</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="">Barra</a></li>
-                    <li><a href="sass.html"><i class="material-icons">search</i></a></li>
-                    <li><a href="badges.html"><i class="material-icons">view</i></a></li>
-                    <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+                    <li><a href="#">Barra</a></li>
+                    <li><a href="#"><i class="material-icons">search</i></a></li>
+                    <li><a href="#"><i class="material-icons">view_module</i></a></li>
+                    <li><a href="#"><i class="material-icons">refresh</i></a></li>
                 </ul>
             </div>
         </nav>
+
+          <ul id="slide-out" class="sidenav">
+            <li><div class="user-view">
+              <div class="background">
+                <img src="/Dise-o-Web-II/Practica3/background1.jpg" width="300" height="200">
+              </div>
+              <a href="#user"><img class="circle" src="/Dise-o-Web-II/Practica3/icono1.jpg"></a>
+              <a href="#name"><span class="white-text name">Ever Cupi Franco</span></a>
+              <a href="#email"><span class="white-text email">francoever1998@gmail.com</span></a>
+            </div></li>
+            <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+            <li><a href="#!">Second Link</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">Subheader</a></li>
+            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+          </ul>
+          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        
+        
         <nav>
-            <div class="nav-wrapper">
+            <div class="nav-wrapper" style="background:rgb(71, 65, 65);">
                 <form action="">
                     <div class="input-field">
                         <input id="search" type="search" required>
@@ -35,13 +57,162 @@
             <div class="section no-pad-bot">
                 <div class="container">
                     <br><br>
-                    <h1 class="header center teal-text text-lighten-2"></h1>
+                    <h1 class="header center teal-text text-lighten-2">Bienvenidos, esta es mi página web</h1>
+                    <div class="row center">
+                        <h5 class="header col s12 light" style="color: rgb(235, 227, 227); ">Esta página web esta con Frameworkmaterialize</h5>
+                    </div>
+                    <div class="row center">
+                        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">comenzar</a>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+            <div class="parallax"><img src="/Dise-o-Web-II/Practica3/background1.jpg"  alt="Unsplashed background img 1"></div>
+        </div>
+        <div class="container">
+            <div class="section">
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2  class="center brwn-text"><i class="material-icons">flash_on</i></h2>
+                            <h5 class="center">Fundamentos</h5>
+
+                            <p class="light">El diseño web implica conocer cómo se deben utilizar cada uno de los elementos permitidos en el HTML, es decir, hacer un uso correcto de este lenguaje dentro de los estándares establecidos por la W3C y en lo referente a la web semántica. Debido a la permisibilidad de algunos navegadores web como Internet Explorer, esta premisa original se ha perdido. Por ejemplo, este navegador permite que no sea necesario cerrar las etiquetas del marcado, utiliza código propietario, etc. </p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2  class="center brwn-text"><i class="material-icons">group</i></h2>
+                            <h5 class="center">CMS</h5>
+                            <p class="light">Los CMS o sistema de gestión de contenido son plataformas web que estandarizan procesos y que permiten a los usuarios que no poseen mucho conocimiento técnico en lenguaje de programación crear y maquetar contenido fácilmente para su página web a través de un backend o gestor de contenido . Entre los CMS más completos y famosos del mercado encontramos a Wordpress y Joomla.</p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2  class="center brwn-text"><i class="material-icons">settings</i></h2>
+                            <h5 class="center">Diseño web adaptable</h5>
+                            <p class="light">El diseño web adaptable (en inglés, responsive, a veces mal adaptado como «responsivo») es una filosofía de diseño web que tiene como objetivo adaptar una misma página web a distintos tamaños de pantalla, dispositivos y orientaciones. Aunque el código HTML que envía el servidor sea el mismo, la apariencia del sitio cambiará de acuerdo con las especificaciones (denominadas media queries) de las hojas de estilo en cascada CSS.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script src="/Dise-o-Web-II/Practica3/js/jquery-3.5.1.min.js"></script>
+        <div class="container">
+            <h4>Iconos</h4>
+        </div>
+        
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="/Dise-o-Web-II/Practica3/icono1.jpg" width="100" height="200"></a>
+            <a class="carousel-item" href="#two!"><img src="/Dise-o-Web-II/Practica3/icono2.jpg" width="100" height="200"></a>
+            <a class="carousel-item" href="#three!"><img src="/Dise-o-Web-II/Practica3/icono3.jpg" width="100" height="200"></a>
+            <a class="carousel-item" href="#four!"><img src="/Dise-o-Web-II/Practica3/icono4.jpg" width="100" height="200"></a>
+            <a class="carousel-item" href="#five!"><img src="/Dise-o-Web-II/Practica3/icono5.jpg" width="100" height="200"></a>
+          </div>
+
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">account_tree</i>¿Qué es el diseño web?</div>
+              <div class="collapsible-body"><span>El diseño web implica trabajo relacionado con el layout y diseño de páginas online, así como la producción de contenido, aunque generalmente se aplica a la creación de sitios web.
+                En este caso, los diseñadores web crean las páginas utilizando lenguajes de marcado como HTML o XML.
+                Por otro lado, la parte visual de los sitios está a cargo del CSS, término utilizado para estilizar los elementos escritos en HTML.
+                Por lo tanto, es común que los diseñadores web utilicen ambos para construir un site porque juntos definirán cómo aparecerán las páginas en los navegadores.
+                El proceso de creación de sitios se puede realizar desde herramientas como Adobe Dreamweaver (que requerirá que el profesional sepa más sobre los códigos) y CMS que son plataformas de administración de contenido.
+                WordPress es uno de los más conocidos y prácticos porque tiene una serie de templates que pueden basar el sitio. El web designer tiene la tarea de instalarlos y personalizarlos según lo que cada cliente quiera.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">account_tree</i>¿Cuáles son los elementos clave del diseño web?</div>
+              <div class="collapsible-body"><span>Cuando hablamos de un buen diseño web, algunos puntos son fundamentales y no pueden faltar en tu sitio. Aquí están los aspectos más destacados
+                Responsividad
+                Como cada vez más las personas acceden a internet solo por teléfono celular, es muy importante que tu sitio sea adecuado para dispositivos móviles, es decir, que sea responsivo.
+                Escaneabilidad
+                ¿Conoces esos correos electrónicos que tienen un “bloque de texto” porque todo el mensaje está escrito en un solo párrafo? Leerlos es demasiado agotador, ¿no es así? Bueno, lo mismo ocurre con los visitantes de tu sitio si el no considerar la escaneabilidad textual.
+                Tipografía
+                Si desde este punto comenzamos a escribir esta publicación con un tipo de letra completamente diferente, tu experiencia de lectura no sería muy agradable, ¿verdad? Después de todo, es una tipografía que no encajaría con el resto del contenido. Lo mismo debería aplicarse a tu sitio.
+                Velocidad de carga
+                En un mundo donde todos parecen estar siempre apurados, tener un sitio web de carga rápida es esencial. Según Google, los sitios que tardan más de 2 segundos en cargarse dañan tanto la experiencia del usuario como la indexación del sitio.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">account_tree</i>¿Qué hace un diseñador web?</div>
+              <div class="collapsible-body"><span>Si bien es común pensar que un diseñador web es responsable de crear sitios web atractivos y completamente funcionales, hacen más que eso
+                Los diseñadores web tienen en su trabajo tareas rutinarias relacionadas con la creación de un diseño para medios digitales y la creación de contenido.
+                Por lo tanto, deben analizar tanto las necesidades del cliente como los objetivos para configurar un sitio web a fin de brindar a los visitantes la mejor experiencia.
+                Además, diseñadores web deben saber cómo insertar gráficos, usar lenguajes como HTML y actualizar el sitio cuando sea necesario.
+                Ahora que has permanecido con nosotros hasta el final del texto, ya sabes qué perfil debe tener un buen profesional de diseño web.
+                Por supuesto, puntos como UI y UX no se pueden omitir. Y para comprender como la experiencia del usuario aplica a los contenidos de los sitios web, entra a este artículo sobre UX writing.</span></div>
+            </li>
+          </ul>
+          
+          
+
+  
+
+        <section id="contacto" class="contacto">
+            <div class="container">
+                <h4>Contacto</h4>
+                <hr>
+                <div class="row">
+                    <div class="col s12 m12">
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <i class="mdi-action-account-cicle prefix"></i>
+                                        <input id="first_name" type="text" class="validate">
+                                        <label for="first_name">Nombre</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input id="last_name" type="text" class="validate">
+                                        <label for="last_name">Apellido</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="mdi-communication-email prefix"></i>
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email">E-Mail</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="mdi-communication-comment prefix"></i>
+                                        <textarea name="" id="mensaje" cols="30" rows="10" class="materialize-textarea" required></textarea>
+                                        <label for="mensaje">Mensaje</label>
+                                    </div>
+                                </div>
+                                <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+                                    <i class="mdi-content-send right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="page-footer teal">
+            <div class="container">
+                <div class="row">
+                    <div class="col 16 s12">
+                        <h5 class="white-text">Este es un footer</h5>
+                        <p class="grey-text text-lighten-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim omnis adipisci facere autem. Nihil voluptatibus expedita corporis repellendus dolorem explicabo similique. Ducimus amet sequi officia sunt. Quo blanditiis eos quisquam?</p>
+                    </div>
+                    <div class="col 13 s12">
+                        <h5 class="white-text">Facebook</h5>
+                        <ul>
+                            <li><a class="white-text" href="http://www.facebook.com">Click</a></li>
+                        </ul>
+                    </div>
+                    <div class="col 13 s12">
+                        <h5 class="white-text">Twitter</h5>
+                        <ul>
+                            <li><a class="white-text" href="http://www.twitter.com">Click</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h6 style="text-align: center; font-size: 3rem; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Creado po Ever Cupi Franco</h6>
+        </footer>
+      <script src="js/init.js"></script>
     </body>
   </html>
         
-   
+    
